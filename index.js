@@ -1,5 +1,6 @@
 var app = require("./app");
-app.listen(process.env.PORT || 300,function()
+var config = require("./config.json")
+app.listen(process.env.PORT || config.port ,function()
 {
     console.log("running");
 })
